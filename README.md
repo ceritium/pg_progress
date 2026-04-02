@@ -15,7 +15,7 @@ No tables. No migrations. No background jobs. Just reads PostgreSQL's built-in p
 Add to your Gemfile:
 
 ```ruby
-gem "pg_progress"
+gem "pg_progress", github: "ceritium/pg_progress"
 ```
 
 ## Usage

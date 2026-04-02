@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
                      "and other long-running PostgreSQL operations in real time. " \
                      "Reads pg_stat_progress_* views and pg_stat_activity with phase " \
                      "transition tracking and logging. Rails 7+, PostgreSQL 16+."
+  spec.homepage = "https://github.com/ceritium/pg_progress"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2"
 
