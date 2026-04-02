@@ -9,8 +9,6 @@ module PgProgress
       private
 
       def sql
-        pattern = MAINTENANCE_PATTERNS.map { |p| connection.quote("%#{p}%") }.join(", ")
-
         <<~SQL
           SELECT
             pid, datname, query, state, wait_event_type, wait_event,

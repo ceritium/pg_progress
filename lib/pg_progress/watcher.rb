@@ -143,7 +143,7 @@ module PgProgress
         dummy_entry = Entry.new(
           pid: pid, datname: nil, table_name: tracked[:table_name],
           command: tracked[:command], phase: "completed",
-          progress_pct: 100.0, duration: nil, details: {}
+          progress_pct: 100.0, started_at: nil, duration: nil, details: {}
         )
         event = Event.new(type: :completed, entry: dummy_entry, previous_phase: tracked[:phases].last[:phase], phase_duration: phase_duration)
         events << event
